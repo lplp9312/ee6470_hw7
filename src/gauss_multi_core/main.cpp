@@ -137,13 +137,6 @@ int main(unsigned hart_id) {
 	unsigned char* source_bitmap = &source_array[input_rgb_raw_data_offset];
 
   printf("======================================\n");
-  printf("\t  Reading from array\n");
-  printf("======================================\n");
-	printf(" input_rgb_raw_data_offset\t= %d\n", input_rgb_raw_data_offset);
-	printf(" width\t\t\t\t= %d\n", width);
-	printf(" length\t\t\t\t= %d\n", length);
-	printf(" bytes_per_pixel\t\t= %d\n",bytes_per_pixel);
-  printf("======================================\n");
 
   unsigned char  buffer[4] = {0};
 	int width_start = (hart_id == 0) ? 0 : width/2;
